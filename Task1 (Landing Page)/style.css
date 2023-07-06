@@ -1,0 +1,149 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Gilroy";
+}
+
+html, body{
+    width: 100%;
+    height: 98%;
+}
+
+#main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+#left{
+    width: 40%;
+    height: 100%;
+    position: relative;
+}
+
+#lnav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 30px;
+    
+}
+
+#lnavr{
+    display: flex;
+    align-items: center;
+}
+
+#lnavr a{
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 18px;
+    
+}
+
+#lnavr a:hover{
+    color: black;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#lnavr i{
+    color:royalblue;
+}
+
+#left #textcenter{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#textcenter h1{
+    font-size: 90px;
+    font-weight: 900;
+}
+
+#textcenter p{
+    opacity: 0.6;
+    font-size: 15px;
+    line-height: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#textcenter a{
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+    font-size: 13px;
+    font-weight: 600;
+    opacity: 0.6;
+}
+
+#right{
+    width:60%;
+    height:100%;
+    background-color: white;
+}
+
+#rtop{
+    width: 100%;
+    height: 50%;
+    background-color: blue;
+    display: flex;
+    border-bottom: 3px solid white;
+}
+
+#rbottom{
+    width: 100%;
+    height: 50%;
+    background-image: url(https://images.unsplash.com/photo-1548016193-b9381233058c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1176&q=80);
+    background-size:cover;
+    background-position: center;
+}
+
+#rtopleft{
+    width: 55%;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1577368089740-7bbf4e2d9b63?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1196&q=80);
+    background-size:cover;
+    background-position: center;
+    border-right: 3px solid white;
+}
+
+#rtopright{
+    width: 45%;
+    height:100%;
+    background-image: url(https://images.unsplash.com/photo-1625556580790-7ce9101965b1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80);
+    background-size:cover;
+    background-position: center;
+}
+
+footer{
+    background-color: white;
+}
+
+footer #cp{
+    text-align: end;
+    margin-top: 3px;
+    opacity: 0.5;
+    margin-right: 10px;
+}
+
+@media(max-width: 500px){
+    #main{
+        flex-direction: column;
+    }
+
+    #main #left{
+        width: 100%;
+    }
+
+    #main #right{
+        width: 100%;
+    }
+}
